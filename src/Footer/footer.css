@@ -1,0 +1,94 @@
+/* Footer Styles */
+.footer {
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* Centering Content */
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: center;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  padding: 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00aaff;
+  transform: scale(1.1);
+}
+
+/* Copyright Text */
+.footer-copyright {
+  margin: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ✅ RESPONSIVENESS */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .footer-links {
+      gap: 15px;
+  }
+  .footer-links a {
+      font-size: 1.2rem;
+      padding: 8px;
+  }
+  .footer-copyright {
+      font-size: 0.95rem;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .footer-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .footer-links a {
+      font-size: 1.1rem;
+      padding: 6px;
+  }
+  .footer-copyright {
+      font-size: 0.9rem;
+  }
+}
+
+/* Small Screens (354px and below) */
+@media (max-width: 354px) {
+  .footer-links {
+      gap: 8px;
+  }
+  .footer-links a {
+      font-size: 1rem;
+  }
+  .footer-copyright {
+      font-size: 0.85rem;
+  }
+}

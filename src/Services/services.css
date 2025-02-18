@@ -1,0 +1,108 @@
+/* Services Section */
+.services {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 50px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Section Heading */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Services List - Main Container */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* 🔹 Centers all items */
+  align-items: center;
+}
+
+/* Individual Service Card */
+.service {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover Effects */
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Icon Styling */
+.icon {
+  color: #4A90E2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover .icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Title */
+.service h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+/* Description */
+.service p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+/* 🔹 Responsive Fixes */
+
+/* For Tablets & Medium Screens */
+@media (max-width: 768px) {
+  .services {
+      padding: 40px 15px;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  .services-list {
+      flex-direction: column; /* 🔹 Ensures one column layout */
+      align-items: center;
+  }
+
+  .service {
+      width: 80%; /* 🔹 Makes service boxes wider */
+      max-width: 300px;
+  }
+}
+
+/* For Smaller Screens (Phones - 354px) */
+@media (max-width: 400px) {
+  h2 {
+      font-size: 1.8rem;
+  }
+
+  .service {
+      width: 95%; /* 🔹 Ensures full width on small devices */
+      padding: 20px;
+  }
+
+  .service h3 {
+      font-size: 1.2rem;
+  }
+
+  .service p {
+      font-size: 0.9rem;
+  }
+}

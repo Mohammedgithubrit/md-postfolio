@@ -1,0 +1,101 @@
+.projects {
+  padding: 50px 20px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+  background: white;
+  padding: 20px;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(143, 144, 235, 0.575); 
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4A90E2;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.project-card a:hover {
+  color: #2c5aa0;
+}
+
+/* ✅ RESPONSIVENESS */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .projects-list {
+      flex-direction: column;
+      align-items: center;
+  }
+  .project-card {
+      width: 90%;
+      max-width: 400px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .header {
+      font-size: 1.5rem;
+  }
+  .project-card {
+      width: 95%;
+  }
+}
+
+/* Small Screens (354px and below) */
+@media (max-width: 354px) {
+  .header {
+      font-size: 1.3rem;
+  }
+  .project-card {
+      width: 100%;
+      padding: 15px;
+  }
+  .project-card p {
+      font-size: 0.9rem;
+  }
+}
