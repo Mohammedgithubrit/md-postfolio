@@ -18,7 +18,6 @@
 .my-detail{
     display: flex;
     margin-top: 50px;
-    /* justify-content:space-around ; */
     margin: 100px auto;
     cursor: pointer;
 }
@@ -52,7 +51,7 @@
 }
 
 .detail-text{
-    padding: 3px;
+    padding: 7px;
 }
 
  .my-education:hover{
