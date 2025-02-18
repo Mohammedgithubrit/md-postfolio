@@ -67,7 +67,9 @@ const home = () => {
                       <a href="https://www.linkedin.com/in/motexyusuf/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                       </a>
-                      <a href="https://x.com/YusufMo68264270" target="_blank" rel="noopener noreferrer">
+                      <a href="https://x.com/YusufMo68264270?t=wT1pD8k2b3AS9mUQWnuOyA&s=09
+
+                        " target="_blank" rel="noopener noreferrer">
                         <FaTwitter />
                       </a>
                     </div>
